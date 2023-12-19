@@ -10,13 +10,10 @@
     <div id="banner"></div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script src="/lib/banner.js" async></script>
+    <script src="/lib/banner.min.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        window.PBanner.init("#banner", {
-          theme: "dark",
-        });
-        window.PBanner.create();
+      window.PBanner.create("#banner", {
+        theme: "dark",
       });
     </script>
   </body>

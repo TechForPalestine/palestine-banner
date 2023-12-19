@@ -5,14 +5,14 @@ class PBanner {
       theme: "system",
       fixed: true,
     };
+
+    document.head.innerHTML +=
+      '<link rel="stylesheet" href="/lib/banner.min.css" type="text/css"/>';
   }
-  init(element, options) {
+  create(element, options) {
     this.element = element;
     this.options = { ...this.options, ...options };
-    document.head.innerHTML +=
-      '<link rel="stylesheet" href="/lib/banner-style.css" type="text/css"/>';
-  }
-  create() {
+
     const banner = document.querySelector(this.element);
     const { theme, fixed } = this.options;
 
@@ -25,7 +25,6 @@ class PBanner {
           <a href="#" class="fp__banner__link" href="https://ceasefiretoday.com/" target="_blank">🍉 Palestine</a>
         </div>
       `;
-      console.log("🇵🇸 Free Palestine Banner init with options", this.options);
     }
   }
 }
