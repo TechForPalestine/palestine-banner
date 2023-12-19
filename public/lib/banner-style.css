@@ -1,0 +1,80 @@
+.fp__banner * {
+    margin: 0;
+    padding: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    .fp__banner {
+        background: #1a1a1a;
+        color: #ffffff;
+    }
+
+    .fp__banner .fp__banner__link {
+        border: 1px solid rgba(255, 255, 255, .1);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .fp__banner {
+        background: #ffffff;
+        color: #1a1a1a;
+    }
+
+    .fp__banner .fp__banner__link {
+        border: 1px solid rgba(0, 0, 0, .1);
+    }
+}
+
+.fp__banner.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.fp__banner.fixed.light {
+    background: #ffffff;
+    color: #1a1a1a;
+}
+
+.fp__banner.fixed.dark {
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+.fp__banner.light .fp__banner__link {
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.fp__banner.dark .fp__banner__link {
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.fp__banner {
+    text-align: center;
+    padding: .5rem 0rem;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+    font-size: .9rem;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);
+}
+
+.fp__banner .fp__banner__link {
+    flex-shrink: 0;
+    background: #149954;
+    color: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem .5rem;
+    flex-grow: 0;
+    transition: background .1s ease-in-out;
+}
+
+.fp__banner .fp__banner__link:hover {
+    background: #1bb766;
+}

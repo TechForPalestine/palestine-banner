@@ -12,9 +12,12 @@
     <script type="module" src="/src/main.tsx"></script>
     <script src="/lib/banner.js" async></script>
     <script>
-      document.addEventListener("DOMContentLoaded", () =>
-        window.PBanner.init("#banner")
-      );
+      document.addEventListener("DOMContentLoaded", () => {
+        window.PBanner.init("#banner", {
+          theme: "dark",
+        });
+        window.PBanner.create();
+      });
     </script>
   </body>
 </html>
