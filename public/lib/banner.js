@@ -7,7 +7,7 @@ class PBanner {
     };
 
     document.head.innerHTML +=
-      '<link rel="stylesheet" href="/lib/banner.min.css" type="text/css"/>';
+      '<link rel="stylesheet" href="https://watermelon-cm1.pages.dev/lib/banner.min.css" type="text/css"/>';
   }
   create(element, options) {
     this.element = element;

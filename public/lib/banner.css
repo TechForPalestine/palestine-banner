@@ -29,6 +29,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 9999;
 }
 
 .fp__banner.fixed.light {
@@ -72,6 +73,7 @@
     align-items: center;
     padding: 0.2rem .5rem;
     flex-grow: 0;
+    text-decoration: none;
     transition: background .1s ease-in-out;
 }
 

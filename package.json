@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "ugly": "npx uglifyjs public/lib/banner.js -o public/lib/banner.min.js && npx css-minify --dir public/lib/ --output public/lib/"
+    "ugly": "npx uglifyjs public/lib/banner.js -o public/lib/banner.min.js && npx css-minify --dir public/lib/ --output public/lib/",
+    "deploy": "yarn build && yarn ugly && npx wrangler pages publish dist"
   },
   "dependencies": {
     "minify": "^11.0.1",
