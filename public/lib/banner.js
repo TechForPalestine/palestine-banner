@@ -21,7 +21,7 @@ class PBanner {
     } else {
       banner.innerHTML = `
         <div class="fp__banner ${theme} ${fixed && "fixed"}">
-          <p class="fp__banner__description">Isreals genocide against 🇵🇸 Palestine needs to stop. Our hears are with those who suffer</p>
+          <p class="fp__banner__description">Isreals genocide against 🇵🇸 Palestine needs to stop. Our hearts are with those who suffer</p>
           <a href="#" class="fp__banner__link" href="https://ceasefiretoday.com/" target="_blank">🍉 Palestine</a>
         </div>
       `;
