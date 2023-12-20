@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import { Banner } from "./components/banner";
+import { ConfigureSnippet } from "./components/configure-snippet";
+export type Theme = "dark" | "light" | "system";
+
+export type ConfigerState = {
+  id: string;
+  theme: Theme;
+  fixed: boolean;
+};
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [state, setState] = useState<ConfigerState>({
+    id: "banner",
+    theme: "system",
+    fixed: false,
+  });
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Banner fixed={state.fixed} theme={state.theme} />
+      <section className="py-24 space-y-12">
+        <div className="mx-auto w-full max-w-screen-md space-y-12">
+          <div className="space-y-8 text-center">
+            <h1 className=" font-medium text-8xl tracking-tighter">
+              A <span className="bg-green-700 text-white px-2">#ceasefire</span>{" "}
+              has to happen now!
+            </h1>
+            <p className="text-xl">
+              Stand in solidarity with palestine and embed this banner on your
+              website.
+            </p>
+          </div>
+          <ConfigureSnippet state={state} onChange={setState} />
+        </div>
+      </section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
