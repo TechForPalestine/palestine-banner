@@ -22,7 +22,7 @@ function App() {
       <section className="py-24 space-y-12">
         <div className="mx-auto w-full max-w-screen-md space-y-12">
           <div className="space-y-8 text-center">
-            <h1 className=" font-medium text-8xl tracking-tighter">
+            <h1 className="font-medium text-8xl tracking-tighter">
               <span className="bg-green-700 text-white px-2">#Ceasefire</span>{" "} NOW!
             </h1>
             <p className="text-xl">

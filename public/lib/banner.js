@@ -6,17 +6,19 @@ class PBanner {
     };
 
     document.head.innerHTML +=
-      '<link rel="stylesheet" href="https://watermelon-cm1.pages.dev/lib/banner.min.css" type="text/css"/>';
+      '<link rel="stylesheet" href="https://banner.levepalestina.net/lib/banner.min.css" type="text/css"/>';
   }
   create(options) {
     this.options = { ...this.options, ...options };
     const mount = document.createElement("div");
+    const id = "fp__banner" + Math.random().toString(36).substr(2, 9);
+    mount.setAttribute("id", id);
     document.body.prepend(mount);
     const { theme, fixed } = this.options;
     mount.innerHTML = `
       <div class="fp__banner ${theme} ${fixed && "fixed"}">
-        <p class="fp__banner__description">Isreals genocide against 🇵🇸 Palestine needs to stop. Our hearts are with those who suffer</p>
-        <a href="#" class="fp__banner__link" href="https://ceasefiretoday.com/" target="_blank">🍉 Palestine</a>
+        <p class="fp__banner__description">🇵🇸 #FreePalestine: End the occupation now! 🇵🇸</p>
+        <a href="#" class="fp__banner__link" href="https://ceasefiretoday.com/" target="_blank">🍉 Act Now</a>
       </div>
     `;
   }

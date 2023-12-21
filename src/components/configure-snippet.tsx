@@ -19,7 +19,7 @@ function ConfigureSnippet({
   const { theme, fixed, base } = state;
 
   const snippet = `
-<-- add this to the bottom of your html file -->
+<!-- Paste this snippet into your website -->
 <script src="${base}/lib/banner.min.js"></script>
 <script>
   window.PBanner.create({
@@ -29,7 +29,7 @@ function ConfigureSnippet({
 </script>`;
 
   return (
-    <div className="flex divide-x border rounded-md shadow-sm">
+    <div className="flex-column divide-x border rounded-md shadow-sm">
       <div className="w-full relative">
         <CopyButton
           onCopy={() =>
