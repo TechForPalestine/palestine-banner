@@ -18,19 +18,19 @@ function ConfigureSnippet({
 
   const { theme, fixed, base } = state;
 
-  const snippet = `
-<!-- Paste this snippet into your website -->
-<script src="${base}/lib/banner.min.js"></script>
+  const snippet = `<!-- Paste this snippet into your website -->
+<script src="${base}/lib/banner.min.js">
+</script>
 <script>
-  window.PBanner.create({
+  window.FPBanner.create({
     theme: "${theme}",
     fixed: ${fixed},
   });
 </script>`;
 
   return (
-    <div className="flex-column divide-x border rounded-md shadow-sm">
-      <div className="w-full relative">
+    <div className="grid grid-cols-3 divide-x border rounded-md shadow-sm">
+      <div className="w-full relative col-span-2">
         <CopyButton
           onCopy={() =>
             toast({
@@ -47,9 +47,9 @@ function ConfigureSnippet({
           <CopyIcon size={14} />
           Copy
         </CopyButton>
-        <CodeSnippet className="text-sm p-4">{snippet}</CodeSnippet>
+        <CodeSnippet className="text-sm p-2">{snippet}</CodeSnippet>
       </div>
-      <div className="w-96 p-6 flex flex-col space-y-4">
+      <div className="p-6 flex flex-col space-y-4">
         <fieldset className="space-y-1 flex gap-2 items-center">
           <Label>Fixed</Label>
           <Switch
@@ -74,8 +74,8 @@ function ConfigureSnippet({
                 label: "Light",
               },
               {
-                value: "system",
-                label: "System",
+                value: "auto",
+                label: "Auto",
               },
             ]}
           />

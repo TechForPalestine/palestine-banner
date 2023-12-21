@@ -8,7 +8,7 @@ const bannerVariants = cva(
       theme: {
         light: "bg-white text-zinc-900",
         dark: "bg-zinc-950 text-zinc-50",
-        system: "bg-white text-zinc-900 dark:bg-zinc-950 dark:text-white",
+        auto: "bg-white text-zinc-900 dark:bg-zinc-950 dark:text-white",
       },
       fixed: {
         true: "fixed top-0 left-0",
@@ -16,7 +16,7 @@ const bannerVariants = cva(
       },
     },
     defaultVariants: {
-      theme: "system",
+      theme: "auto",
       fixed: false,
     },
   }
@@ -27,7 +27,7 @@ type BannerProps = VariantProps<typeof bannerVariants>;
 function Banner({ theme, fixed }: BannerProps) {
   return (
     <div className={bannerVariants({ theme, fixed })}>
-       🇵🇸 #FreePalestine: End the occupation now! 🇵🇸
+      🇵🇸 #FreePalestine: End the occupation now! 🇵🇸
       <Button size="sm" variant="green" asChild>
         <a href="https://ceasefiretoday.com/" target="_blank">
           🍉 Act Now

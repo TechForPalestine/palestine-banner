@@ -1,7 +1,7 @@
-class PBanner {
+class FPBanner {
   constructor() {
     this.options = {
-      theme: "system",
+      theme: "auto",
       fixed: true,
     };
 
@@ -10,11 +10,14 @@ class PBanner {
   }
   create(options) {
     this.options = { ...this.options, ...options };
+
+    const { theme, fixed } = this.options;
+
     const mount = document.createElement("div");
-    const id = "fp__banner" + Math.random().toString(36).substr(2, 9);
+    const id = "fp__banner_" + Math.random().toString(36).substr(2, 9);
     mount.setAttribute("id", id);
     document.body.prepend(mount);
-    const { theme, fixed } = this.options;
+
     mount.innerHTML = `
       <div class="fp__banner ${theme} ${fixed && "fixed"}">
         <p class="fp__banner__description">🇵🇸 #FreePalestine: End the occupation now! 🇵🇸</p>
@@ -24,4 +27,4 @@ class PBanner {
   }
 }
 
-window.PBanner = new PBanner();
+window.FPBanner = new FPBanner();
