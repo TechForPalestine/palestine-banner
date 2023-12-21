@@ -6,7 +6,7 @@ class FPBanner {
     };
 
     document.head.innerHTML +=
-      '<link rel="stylesheet" href="https://banner.levepalestina.net/lib/banner.min.css" type="text/css"/>';
+      '<link rel="stylesheet" href="https://levepalestina.net/lib/banner.min.css" type="text/css"/>';
   }
   create(options) {
     this.options = { ...this.options, ...options };
