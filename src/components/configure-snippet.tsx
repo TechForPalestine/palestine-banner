@@ -1,31 +1,28 @@
 import { CodeSnippet } from "./ui/code-snippet";
 import * as SDSelect from "./ui/select";
 import { Label } from "./ui/label";
-import { Input } from "./ui/input";
 import { CopyButton } from "./ui/copy-button";
 import { useToast } from "./ui/use-toast";
 import { CopyIcon } from "lucide-react";
-import { ConfigerState, Theme } from "@/App";
+import { ConfigState, Theme } from "@/App";
 import { Switch } from "./ui/switch";
 
 function ConfigureSnippet({
   state,
   onChange,
 }: {
-  state: ConfigerState;
-  onChange: (state: ConfigerState) => void;
+  state: ConfigState;
+  onChange: (state: ConfigState) => void;
 }) {
   const { toast } = useToast();
 
-  const { id, theme, fixed } = state;
+  const { theme, fixed, base } = state;
 
-  const snippet = `//add this to your html file
-<div id="${id}"></div>
-
-// add this to the bottom of your html file
-<script src="/lib/banner.min.js"></script>
+  const snippet = `
+<-- add this to the bottom of your html file -->
+<script src="${base}/lib/banner.min.js"></script>
 <script>
-  window.PBanner.create("${id}", {
+  window.PBanner.create({
     theme: "${theme}",
     fixed: ${fixed},
   });
@@ -62,14 +59,6 @@ function ConfigureSnippet({
             }
           />
         </fieldset>
-        <fieldset className="space-y-1">
-          <Label>Id</Label>
-          <Input
-            value={id}
-            onChange={(e) => onChange({ ...state, id: e.currentTarget.value })}
-          />
-        </fieldset>
-
         <fieldset className="space-y-1">
           <Label>Theme</Label>
           <Select

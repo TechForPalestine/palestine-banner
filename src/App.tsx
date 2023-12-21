@@ -3,16 +3,16 @@ import { Banner } from "./components/banner";
 import { ConfigureSnippet } from "./components/configure-snippet";
 export type Theme = "dark" | "light" | "system";
 
-export type ConfigerState = {
-  id: string;
+export type ConfigState = {
+  base: string
   theme: Theme;
   fixed: boolean;
 };
 
 function App() {
-  const [state, setState] = useState<ConfigerState>({
-    id: "banner",
+  const [state, setState] = useState<ConfigState>({
     theme: "system",
+    base: window.location.origin,
     fixed: false,
   });
 
@@ -23,11 +23,10 @@ function App() {
         <div className="mx-auto w-full max-w-screen-md space-y-12">
           <div className="space-y-8 text-center">
             <h1 className=" font-medium text-8xl tracking-tighter">
-              A <span className="bg-green-700 text-white px-2">#ceasefire</span>{" "}
-              has to happen now!
+              <span className="bg-green-700 text-white px-2">#Ceasefire</span>{" "} NOW!
             </h1>
             <p className="text-xl">
-              Stand in solidarity with palestine and embed this banner on your
+              Stand in solidarity with the people of Palestine and embed this banner on your
               website.
             </p>
           </div>
