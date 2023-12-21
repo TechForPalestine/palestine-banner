@@ -1,6 +1,7 @@
 class FPBanner {
   constructor() {
     this.options = {
+      id: undefined,
       theme: "auto",
       fixed: true,
     };
@@ -11,12 +12,20 @@ class FPBanner {
   create(options) {
     this.options = { ...this.options, ...options };
 
-    const { theme, fixed } = this.options;
+    const { id, theme, fixed } = this.options;
 
-    const mount = document.createElement("div");
-    const id = "fp__banner_" + Math.random().toString(36).substr(2, 9);
-    mount.setAttribute("id", id);
-    document.body.prepend(mount);
+    let mount;
+
+    if (id) {
+      mount = document.getElementById(id);
+    } else {
+      mount = document.createElement("div");
+      mount.setAttribute(
+        "id",
+        "fp__banner_" + Math.random().toString(36).substr(2, 9)
+      );
+      document.body.prepend(mount);
+    }
 
     mount.innerHTML = `
       <div class="fp__banner ${theme} ${fixed && "fixed"}">
