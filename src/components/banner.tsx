@@ -30,7 +30,7 @@ function Banner({ theme, fixed }: BannerProps) {
       🇵🇸 #FreePalestine: End the occupation now! 🇵🇸
       <Button size="sm" variant="green" asChild>
         <a href="https://ceasefiretoday.com/" target="_blank">
-          🍉 Act Now
+          Act Now
         </a>
       </Button>
     </div>

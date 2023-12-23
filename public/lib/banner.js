@@ -30,7 +30,7 @@ class FPBanner {
     mount.innerHTML = `
       <div class="fp__banner ${theme} ${fixed && "fixed"}">
         <p class="fp__banner__description">🇵🇸 #FreePalestine: End the occupation now! 🇵🇸</p>
-        <a class="fp__banner__link" href="https://ceasefiretoday.com/" target="_blank">🍉 Act Now</a>
+        <a class="fp__banner__link" href="https://ceasefiretoday.com/" target="_blank">Act Now</a>
       </div>
     `;
   }
