@@ -27,10 +27,10 @@ type BannerProps = VariantProps<typeof bannerVariants>;
 function Banner({ theme, fixed }: BannerProps) {
   return (
     <div className={bannerVariants({ theme, fixed })}>
-      🇵🇸 #FreePalestine: End the occupation now! 🇵🇸
+      🇵🇸 #SaveGaza: Call For A Ceasefire Now! 🇵🇸
       <Button size="sm" variant="green" asChild>
-        <a href="https://ceasefiretoday.com/" target="_blank">
-          Act Now
+        <a href="https://techforpalestine.org" target="_blank">
+          Learn
         </a>
       </Button>
     </div>

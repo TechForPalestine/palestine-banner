@@ -22,7 +22,7 @@ function ConfigureSnippet({
 <script src="${base}/lib/banner.min.js">
 </script>
 <script>
-  window.FPBanner.create({
+  TFPBanner.create({
     theme: "${theme}",
     fixed: ${fixed},
   });

@@ -1,56 +1,56 @@
-.fp__banner * {
+.tfp__banner * {
     margin: 0;
     padding: 0;
 }
 
 @media (prefers-color-scheme: dark) {
-    .fp__banner {
+    .tfp__banner {
         background: #1a1a1a;
         color: #ffffff;
     }
 
-    .fp__banner .fp__banner__link {
+    .tfp__banner .tfp__banner__link {
         border: 1px solid rgba(255, 255, 255, .1);
     }
 }
 
 @media (prefers-color-scheme: light) {
-    .fp__banner {
+    .tfp__banner {
         background: #ffffff;
         color: #1a1a1a;
     }
 
-    .fp__banner .fp__banner__link {
+    .tfp__banner .tfp__banner__link {
         border: 1px solid rgba(0, 0, 0, .1);
     }
 }
 
-.fp__banner.fixed {
+.tfp__banner.fixed {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
 }
 
-.fp__banner.fixed.light {
+.tfp__banner.fixed.light {
     background: #ffffff;
     color: #1a1a1a;
 }
 
-.fp__banner.fixed.dark {
+.tfp__banner.fixed.dark {
     background: #1a1a1a;
     color: #ffffff;
 }
 
-.fp__banner.light .fp__banner__link {
+.tfp__banner.light .tfp__banner__link {
     border: 1px solid rgba(0, 0, 0, .1);
 }
 
-.fp__banner.dark .fp__banner__link {
+.tfp__banner.dark .tfp__banner__link {
     border: 1px solid rgba(255, 255, 255, .1);
 }
 
-.fp__banner {
+.tfp__banner {
     text-align: center;
     padding: .5rem 0rem;
     width: 100%;
@@ -63,7 +63,7 @@
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);
 }
 
-.fp__banner .fp__banner__link {
+.tfp__banner .tfp__banner__link {
     flex-shrink: 0;
     background: #149954;
     color: #ffffff;
@@ -77,6 +77,6 @@
     transition: background .1s ease-in-out;
 }
 
-.fp__banner .fp__banner__link:hover {
+.tfp__banner .tfp__banner__link:hover {
     background: #1bb766;
 }
