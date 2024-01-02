@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://techforpalestine.org">
-    <img alt="Palestine Banner" src="https://i.imgur.com/44lUrid.jpg">
+    <img alt="Palestine Banner" src="https://i.imgur.com/4mur9FP.jpg">
   </a>
 </p>
 <p align="center">
