@@ -11,13 +11,16 @@
 
 Include the already compiled JavaScript into your website and initialize the banner.
 ```html
-<script src="https://banner.techforpalestine.org/lib/banner.min.js"></script>
-<script>
-  TFPBanner.create({
-    theme: "auto",
-    fixed: false,
-  });
-</script>
+<head>
+  ...
+  <script src="https://tfpb.techforpalestine.org/lib/banner.min.js"></script>
+  <script>
+    TFPBanner.create({
+      theme: "auto",
+      fixed: false,
+    });
+  </script>
+</head>
 ```
 
 ## 📖 Usage

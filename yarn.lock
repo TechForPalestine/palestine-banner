@@ -2862,7 +2862,7 @@ tailwindcss@^3.4.0:
     resolve "^1.22.2"
     sucrase "^3.32.0"
 
-terser@^5.15.1:
+terser@^5.15.1, terser@^5.26.0:
   version "5.26.0"
   resolved "https://registry.yarnpkg.com/terser/-/terser-5.26.0.tgz#ee9f05d929f4189a9c28a0feb889d96d50126fe1"
   integrity sha512-dytTGoE2oHgbNV9nTzgBEPaqAWvcJNl66VZ0BkJqlvp71IjO8CxdBx/ykCNb47cLnCmCvRZ6ZR0tLkqvZCdVBQ==
