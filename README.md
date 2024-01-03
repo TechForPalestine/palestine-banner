@@ -11,7 +11,7 @@
 
 ## ⚡️ Quickstart
 
-Include the already compiled JavaScript into your website and initialize the banner.
+Include the already compiled JavaScript into your website and initialize the banner. You can set the color mode to "auto", "light", or "dark".
 ```html
 <head>
   ...
