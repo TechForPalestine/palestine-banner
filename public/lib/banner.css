@@ -32,12 +32,12 @@
     z-index: 9999;
 }
 
-.tfp__banner.fixed.light {
+.tfp__banner.light {
     background: #ffffff;
     color: #1a1a1a;
 }
 
-.tfp__banner.fixed.dark {
+.tfp__banner.dark {
     background: #1a1a1a;
     color: #ffffff;
 }

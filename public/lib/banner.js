@@ -1,18 +1,20 @@
 globalThis.TFPBanner = {
-  options: {
-    id: undefined,
-    theme: "auto",
-    fixed: true,
-  },
   create(options) {
-    this.options = { ...this.options, ...options };
+    
+    const merged = {
+      id: undefined,
+      theme: "auto",
+      fixed: true,
+      ...options
+    }
 
-    const { id, theme, fixed } = this.options;
+    const { id, theme, fixed } = merged;
 
     let mount;
 
     document.head.innerHTML +=
     '<link rel="stylesheet" href="https://tfpb.techforpalestine.org/lib/banner.min.css" type="text/css"/>';
+
     document.addEventListener("DOMContentLoaded", () => {
       if (id) {
         mount = document.getElementById(id);
