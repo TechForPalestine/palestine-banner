@@ -30,8 +30,8 @@ globalThis.TFPBanner = {
 
       mount.innerHTML = `
         <div class="tfp__banner ${theme} ${fixed && "fixed"}">
-          <p class="tfp__banner__description">🇵🇸 #SaveGaza: Call For A Ceasefire Now! 🇵🇸</p>
-          <a class="tfp__banner__link" href="https://techforpalestine.org" target="_blank">Learn</a>
+          <p class="tfp__banner__description">🇵🇸 Call for a #CeasefireNOW 🇵🇸</p>
+          <a class="tfp__banner__link" href="https://techforpalestine.org/learn-more" target="_blank">Act Now</a>
         </div>
       `;
     })
