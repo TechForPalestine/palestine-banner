@@ -11,7 +11,12 @@
 
 ## ⚡️ Quickstart
 
-Include the already compiled JavaScript into your website and initialize the banner. You can set the color mode to "auto", "light", or "dark".
+Include the already compiled JavaScript into your website and initialize the banner. You can set the `theme` to `"auto", "light", or "dark"`.
+
+<img width="1708" alt="Screenshot 2024-01-12 at 10 21 19 AM" src="https://github.com/TechForPalestine/palestine-banner/assets/2857405/7067718d-a25f-4e6c-a258-e129ff596eb5">
+<img width="1712" alt="Screenshot 2024-01-12 at 10 21 02 AM" src="https://github.com/TechForPalestine/palestine-banner/assets/2857405/6d07aaca-1541-4caa-9b6f-23e3ee45ce05">
+
+
 ```html
 <head>
   ...
