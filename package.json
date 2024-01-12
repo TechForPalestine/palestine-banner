@@ -9,7 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "compress": "npx terser public/lib/banner.js -o public/lib/banner.min.js -c && npx css-minify --dir public/lib/ --output public/lib/",
-    "deploy": "yarn build && yarn compress && npx wrangler pages publish dist"
+    "deploy": "rm -r dist && yarn build && yarn compress && npx wrangler pages publish dist"
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.3.0",
