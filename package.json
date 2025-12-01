@@ -23,7 +23,7 @@
     "global": "^4.4.0",
     "highlight.js": "^11.9.0",
     "lucide-react": "^0.298.0",
-    "minify": "^11.0.1",
+    "minify": "^14.1.0",
     "react": "^18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
